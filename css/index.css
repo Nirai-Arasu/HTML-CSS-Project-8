@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  color: #3e4794;
+  font-family: Roboto;
+  font-size: 1rem;
+}
+.main-div {
+  padding: 2rem 0 2rem 6rem;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 6rem;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+.hamburger {
+  display: none;
+}
+
+.signin-btn {
+  padding: 8px 1rem;
+}
+.intro-section {
+  margin-top: 4rem;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+}
+.left-section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.imgs-div {
+  position: relative;
+}
+.left-section > h1 {
+  font-size: 5rem;
+}
+.left-section > h4 {
+  color: #9598ae;
+  margin-bottom: 5rem;
+}
+.learn-more-btn {
+  font-size: 1.5rem;
+}
+button {
+  background-image: linear-gradient(to right, #965cf2, #ff8adc);
+
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 26px;
+  display: block;
+  border: none;
+}
+.main-div {
+  background: url(../images/backcover.svg);
+
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.vector-img {
+  position: absolute;
+  bottom: 150px;
+}
+.vector-dot {
+  position: absolute;
+  bottom: 240px;
+  right: 860px;
+}
+img:last-child {
+  margin: auto;
+}
+@media only screen and (max-width: 1400px) {
+  .main-div {
+    padding: 2rem;
+  }
+  nav {
+    padding-right: 0rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .imgs-div img:last-child {
+    width: 100%;
+  }
+  .vector-img {
+    display: none;
+  }
+  .vector-dot {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-div {
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 805px) {
+  .main-div {
+    background-size: cover;
+  }
+  .left-section h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 695px) {
+  .main-div {
+    background-size: cover;
+  }
+  .nav-items {
+    display: none;
+  }
+  .end {
+    display: flex;
+    column-gap: 2rem;
+  }
+  .hamburger {
+    display: block;
+  }
+  img:last-child {
+    margin-right: 0rem;
+  }
+  .intro-section {
+    flex-direction: column-reverse;
+  }
+  .left-section {
+    align-items: center;
+    row-gap: 2rem;
+  }
+  .left-section > h4 {
+    margin: 0rem;
+  }
+  button {
+    padding: 10px 30px;
+  }
+}
